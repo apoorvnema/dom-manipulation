@@ -1,11 +1,12 @@
-function myForm(event) {
+function handleFormSubmit(event) {
     event.preventDefault();
-    const username = document.getElementById("username").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    localStorage.setItem("Username", username);
-    localStorage.setItem("Email", email);
-    localStorage.setItem("Phone", phone);
+    let myObj = {
+        username: event.target.username.value,
+        email: event.target.email.value,
+        phone: event.target.phone.value,
+    }
+    let myObj_serialised = JSON.stringify(myObj);
+    localStorage.setItem("User Details", myObj_serialised);
 }
-const form = document.getElementById("myForm");
-form.addEventListener("submit", myForm);
+
+module.exports = handleFormSubmit;

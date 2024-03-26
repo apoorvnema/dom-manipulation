@@ -9,15 +9,14 @@
 </head>
 
 <body style="margin: 0">
-    <!-- Write your code below -->
-    <form id="myForm">
-        <label for="username">Username:</label>
-        <input type="text" name="username" id="username"><br><br>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email"><br><br>
-        <label for="phone">Phone:</label>
-        <input type="tel" name="phone" id="phone"><br><br>
-        <button type="submit" id="btn">Submit</button>
+    <form onsubmit="handleFormSubmit(event)">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <label for="phone">Phone No</label>
+        <input type="tel" name="phone" id="phone" />
+        <button type="submit">Submit</button>
     </form>
 </body>
 <script src="index.js"></script>
