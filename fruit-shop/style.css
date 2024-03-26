@@ -33,6 +33,7 @@ form button {
     border: none;
     border-radius: 5px;
     margin-top: 5px;
+    margin-left: 5px;
     background-color: yellowgreen;
 }
 
@@ -71,4 +72,9 @@ li {
     border-radius: 2px;
     padding: 5px 10px;
     margin-top: 5px;
+}
+
+p {
+    margin: 0;
+    font-size: 15px;
 }
