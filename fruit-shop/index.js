@@ -1,5 +1,4 @@
-const fruit = document.getElementsByClassName("fruit");
-fruit[2].style.background = "yellow";
-for (let i = 0; i < fruit.length; i++) {
-    fruit[i].style.fontWeight = "bold";
-}
+const fruit = document.getElementsByTagName("li");
+fruit[4].style.color = "blue";
+for (let i = 0; i < fruit.length; i++)
+    fruit[i].style.fontStyle = "italic";
